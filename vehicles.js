@@ -59,7 +59,7 @@ class Garage {
     }
 
     // Add a vehicle to this garage.
-    // The new vehicle will only be added successfully if it is an instance of class Vehicle and if the garage is not yet at capacity.
+    // The new vehicle will only be added if it is an instance of class Vehicle and if the garage is not yet at capacity.
     add(vehicle) {
         if (!(vehicle instanceof Vehicle)) {
             return "Only vehicles are allowed in here!";
@@ -70,6 +70,6 @@ class Garage {
         }
 
         this.vehicles.push(vehicle);
-        return "Vehicle successfully added to this garage.";
+        return "Vehicle added!";
     }
 }
