@@ -23,7 +23,7 @@ class Vehicle {
 }
 
 
-/* PART 2: Represents a car.
+/* PART 2: Represents a car, which has 4 wheels.
 * Takes a make, model, and year as arguments.
 */
 class Car extends Vehicle {
@@ -34,7 +34,7 @@ class Car extends Vehicle {
 }
 
 
-/* PART 3: Represents a motorcycle.
+/* PART 3: Represents a motorcycle, which has 2 wheels.
 * Takes a make, model, and year as arguments.
 */
 class Motorcycle extends Vehicle {
@@ -65,7 +65,7 @@ class Garage {
             return "Only vehicles are allowed in here!";
         }
 
-        if (this.vehicles.length === this.capacity) {
+        if (this.vehicles.length >= this.capacity) {
             return "Sorry, we're full.";
         }
 
