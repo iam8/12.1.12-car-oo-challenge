@@ -1,3 +1,14 @@
 /* Ioana Alex Mititean */
 /* 10/26/22 */
 /* Exercise 12.1.12: Car OO Project */
+
+body {
+    background-image: linear-gradient(red, yellow);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: yellow;
+    text-align: center;
+}
