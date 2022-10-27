@@ -47,3 +47,27 @@ class Motorcycle extends Vehicle {
         return "VROOM!!!";
     }
 }
+
+
+/* PART 4: Represents a garage, which can store a number of Vehicles.
+* Takes a capacity as argument.
+*/
+class Garage {
+    constructor(capacity) {
+        this.capacity = capacity;
+        this.vehicles = [];
+    }
+
+    add(vehicle) {
+        if (!(vehicle instanceof Vehicle)) {
+            return "Only vehicles are allowed in here!";
+        }
+
+        if (this.vehicles.length === this.capacity) {
+            return "Sorry, we're full.";
+        }
+
+        this.vehicles.push(vehicle);
+        return "Vehicle successfully added to this garage.";
+    }
+}
